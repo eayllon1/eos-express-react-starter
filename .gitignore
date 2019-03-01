@@ -4,7 +4,7 @@
 .expo/
 
 # EOS
-**/*.log
+nodeos.log
 
 # dependencies
 **/node_modules
