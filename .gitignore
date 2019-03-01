@@ -3,6 +3,9 @@
 # expo
 .expo/
 
+# EOS
+**/nodeos.log
+
 # dependencies
 **/node_modules
 
