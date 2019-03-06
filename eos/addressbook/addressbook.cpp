@@ -21,8 +21,7 @@ class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
       require_auth( user );
       address_index addresses(_code, _code.value);
       auto iterator = addresses.find(user.value);
-      if( iterator == addresses.end() )
-      {
+      if ( iterator == addresses.end() ) {
         addresses.emplace(user, [&]( auto& row ) {
          row.key = user;
          row.first_name = first_name;
@@ -31,8 +30,7 @@ class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
          row.city = city;
          row.state = state;
         });
-      }
-      else {
+      } else {
         string changes;
         addresses.modify(iterator, user, [&]( auto& row ) {
           row.key = user;
@@ -65,7 +63,7 @@ class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
       uint64_t primary_key() const {
         return key.value;
       };
-    }
+    };
 
     typedef eosio::multi_index<"people"_n, person> address_index;
 };
