@@ -7,6 +7,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users.route');
+const eosRouter = require('./routes/eos.route');
 
 const app = express();
 
@@ -33,6 +34,7 @@ if (app.get('env') === 'production') {
 // Routes
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/eos', eosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
