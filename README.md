@@ -16,13 +16,9 @@ A starter app for EOS using Node.js, Express, React, and React-Native.
 
 ### 3.1 Installing
 
-1. Clone project
+Clone project.
 
-```
-git clone https://github.com/johnworthley/icotracker.git
-```
-
-2. Install dependencies in both `cd ./frontend` and `cd ./backend`
+Install dependencies in both `cd ./frontend` and `cd ./backend`
 
 ```
 npm install || yarn
