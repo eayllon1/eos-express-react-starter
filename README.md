@@ -11,7 +11,7 @@ twitter: https://twitter.com/relativeread
 
 ## Research 1-2019
 
-# eos-starter-smart-contracts
+# EOS Starter Smart Contracts
 
 ## 1 |  Description
 
